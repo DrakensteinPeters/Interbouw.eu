@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Interbouw — C. den Breejen Interieurbouw & Meubelmakerij</title>
+<title>Interbouw — Cees den Breejen Interieurbouw & Meubelmakerij</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -122,6 +122,7 @@
 
   .hero-right {
     position: relative; overflow: hidden;
+    min-height: 400px;
   }
   .hero-right::after {
     content: '';
@@ -131,7 +132,7 @@
 
   /* Wood grain illustration */
   .hero-visual {
-    width: 100%; height: 100%;
+    position: absolute; inset: 0;
     background: 
       repeating-linear-gradient(
         92deg,
@@ -148,7 +149,6 @@
         transparent 15px, transparent 30px
       ),
       linear-gradient(160deg, #2a2018 0%, #1a1008 40%, #2d1e0f 70%, #1a1612 100%);
-    display: flex; align-items: center; justify-content: center;
   }
 
   .hero-badge {
@@ -260,9 +260,10 @@
 
   .over-visual {
     position: relative;
+    min-height: 300px;
   }
   .over-box {
-    width: 100%; aspect-ratio: 5/4;
+    position: absolute; inset: 0;
     background: 
       repeating-linear-gradient(
         5deg,
@@ -274,7 +275,7 @@
     border: 1px solid rgba(200,169,110,.15);
   }
   .over-box::after {
-    content: 'C. den Breejen\AMeubelmakerij';
+    content: 'Cees den Breejen\AMeubelmakerij';
     white-space: pre;
     position: absolute; bottom: 2rem; left: 2rem;
     font-family: 'Playfair Display', serif;
@@ -390,7 +391,7 @@
   <div class="hero-left">
     <div class="hero-eyebrow">Interieurbouw &amp; Meubelmakerij</div>
     <h1>Vakmanschap<br>in <em>hout &amp;<br>interieur</em></h1>
-    <p class="hero-sub">C. den Breejen ontwerpt en realiseert op maat gemaakte meubelen, keukens en betimmeringen — voor particulieren, bedrijven en scheepvaart.</p>
+    <p class="hero-sub">Cees den Breejen ontwerpt en realiseert op maat gemaakte meubelen, keukens en betimmeringen — voor particulieren, bedrijven en scheepvaart.</p>
     <div style="display:flex;gap:1rem;flex-wrap:wrap;">
       <a class="btn" href="#contact">Neem contact op</a>
       <a class="btn btn-outline" href="#diensten">Bekijk diensten</a>
@@ -470,7 +471,7 @@
   <div class="over-text fade-up">
     <div class="section-label">Over ons</div>
     <h2>Klein bedrijf,<br><em>groot vakmanschap</em></h2>
-    <p>C. den Breejen Interieurbouw is een allround interieurbouwbedrijf dat zich richt op zowel de particuliere klant als het bedrijfsleven. Wij combineren ambachtelijk vakmanschap met oog voor detail en persoonlijke service.</p>
+    <p>Cees den Breejen Interieurbouw is een allround interieurbouwbedrijf dat zich richt op zowel de particuliere klant als het bedrijfsleven. Wij combineren ambachtelijk vakmanschap met oog voor detail en persoonlijke service.</p>
     <p>Of het nu gaat om een uniek meubel, een complete keuken of de betimmering van een schip — elk project krijgt de zorgvuldigheid en aandacht die het verdient.</p>
     <div class="over-stats">
       <div>
@@ -555,7 +556,7 @@
   <div class="section-label" style="justify-content:center;">Bereikbaarheid</div>
   <h2>Neem <em>contact</em> op</h2>
   <p class="sub">Heeft u een project of vraag? Wij komen graag bij u langs voor een vrijblijvend gesprek en offerte.</p>
-  <a class="btn" href="/cdn-cgi/l/email-protection#4f262129200f26213b2a3d2d203a38612a3a">Stuur een e-mail</a>
+  <a class="btn" href="mailto:info@interbouw.eu">Stuur een e-mail</a>
   <div class="contact-grid">
     <div class="contact-card">
       <div class="label">Website</div>
@@ -574,13 +575,13 @@
 
 <!-- FOOTER -->
 <footer>
-  <div>© 2025 C. den Breejen Interieurbouw &amp; Meubelmakerij — Interbouw.eu</div>
+  <div>© 2025 Cees den Breejen Interieurbouw &amp; Meubelmakerij — Interbouw.eu</div>
   <div style="display:flex;gap:2rem;">
     <a href="#home" style="color:var(--muted);text-decoration:none;">↑ Terug naar boven</a>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Scroll-triggered fade-up
   const obs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
