@@ -351,11 +351,11 @@
   }
 
   /* ── ANIMATIONS ── */
-  .fade-up {
-    opacity: 0; transform: translateY(28px);
-    transition: opacity .7s ease, transform .7s ease;
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
-  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .fade-up { animation: fadeUp .8s ease both; }
 
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
@@ -556,7 +556,7 @@
   <div class="section-label" style="justify-content:center;">Bereikbaarheid</div>
   <h2>Neem <em>contact</em> op</h2>
   <p class="sub">Heeft u een project of vraag? Wij komen graag bij u langs voor een vrijblijvend gesprek en offerte.</p>
-  <a class="btn" href="mailto:info@interbouw.eu">Stuur een e-mail</a>
+  <a class="btn" href="/cdn-cgi/l/email-protection#4c25222a230c252238293e2e23393b622939">Stuur een e-mail</a>
   <div class="contact-grid">
     <div class="contact-card">
       <div class="label">Website</div>
@@ -581,8 +581,5 @@
   </div>
 </footer>
 
-<script>
-  // Scroll-triggered fade-up
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add
+</body>
+</html>
